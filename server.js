@@ -30,7 +30,7 @@ app.all('*', function (req, res, next) {
             }).pipe(res);
 });
 
-app.set('port', process.env.PORT || 8200);
+app.set('port', process.env.PORT || 8080);
 
 app.listen(app.get('port'), function () {
     console.log('Proxy server listening on port ' + app.get('port'));
